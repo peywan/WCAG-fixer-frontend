@@ -49,7 +49,7 @@ pre {
   width: 100%;
   color: rgb(46, 45, 45);
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: top;
+  align-items: start;
   padding: 20px;
 }
 h1 {

@@ -61,7 +61,7 @@ export default function InputComponent() {
                 </div>
                 {(isLoading || showAnswer) && (
                     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-                        <div className="bg-[#01353F] p-10 rounded-md shadow-lg text-center relative max-w-[700px] w-full">
+                        <div className="bg-[#01353F] p-10 rounded-md shadow-lg text-start relative max-w-[700px] w-full">
                             {isLoading ? (
                                 <>
                                     <h2 className="text-2xl font-bold text-white mb-4">ACCESSIBILITY CHECK</h2>
@@ -94,7 +94,7 @@ export default function InputComponent() {
                                 </div>
                             )}
                             <button
-                                className="absolute top-2 right-2 text-white bg-red-600 rounded-full h-10 w-10 flex items-center justify-center"
+                                className="absolute top-2 right-2 text-white rounded-full h-10 w-10 flex items-center justify-center"
                                 onClick={() => { setIsLoading(false); setShowAnswer(false); }}
                             >
                                 &times;
